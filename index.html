@@ -12,41 +12,39 @@
   <meta property="og:title" content="Digital Accessibility Courses">
   <meta property="og:image" content=""> <!-- заполнить после публикации на GitHub Pages -->
 </head>
-<body class="page">
-  <header class="header">
-    <a href="https://kurmak.info/" class="header__title" target="_blank">kurmak.info</a>
-  </header>
-  <main class="main">
-    <div class="main__text">
-      <h1 class="main__title">CERTIFICATE</h1>
-      <p class="main__subtitle">DIGITAL ACCESSIBILITY COURSE</p>
-      <article class="main__copyright">
-        <p class="main__author">Completed by Sergey Shiryaev &#9989;</p>
-        <p class="main__date">November 7, 2020</p>
-        <p class="main__time">5 weeks of study, 8 hours per week.</p>
-      </article>
-    </div>
-    <img class="main__certificate" src="./images/certify_1.jpg" alt="Сертификат">
-  </main>
-  <footer class="footer">
-    <p class="footer__share">Share</p>
-    <ul class="footer__list">
-      <li class="footer__link">
-        <a href="#" class="footer__links" target="_blank"><img class="footer__images" 
-          src="./images/Combined_Shape.svg" alt="Email icon">
-        </a>
-      </li>
-      <li class="footer__link">
-        <a href="#" class="footer__links" target="_blank"><img class="footer__images" 
-          src="./images/Combined_Shape_Copy_6.svg" alt="Telegram icon">
-        </a>
-      </li>
-      <li class="footer__link">
-        <a href="#" class="footer__links" target="_blank"><img class="footer__images" 
-          src="./images/Combined_Shape_Copy_5.svg" alt="Facebook icon">
-        </a>
-      </li>
-    </ul>
-  </footer>
+<body class="page"> 
+  <!-- изначально контейнер page содержал 3 блока (header, main, footer), 
+    но сетка с гридами показала иной способ. БЭМ-полиция уже выехала за мной :) -->
+  <a href="https://kurmak.info/" class="header__title" target="_blank">kurmak.info</a>
+  <div class="main__text">
+    <h1 class="main__title">CERTIFICATE</h1>
+    <p class="main__subtitle">DIGITAL ACCESSIBILITY COURSE</p>
+    <article class="main__copyright">
+      <p class="main__author">Completed by Sergey Shiryaev &#9989;</p>
+      <p class="main__date">November 7, 2020</p>
+      <p class="main__time">5 weeks of study, 8 hours per week.</p>
+    </article>
+  </div>
+  <div class="main__content">
+  <img class="main__certificate" src="./images/certify_1.jpg" alt="Сертификат">
+  <p class="main__share">Share</p>
+  <ul class="main__list">
+    <li class="main__link">
+      <a href="#" class="main__links" target="_blank"><img class="main__images" 
+        src="./images/Combined_Shape.svg" alt="Email icon">
+      </a>
+    </li>
+    <li class="main__link">
+      <a href="#" class="main__links" target="_blank"><img class="main__images" 
+        src="./images/Combined_Shape_Copy_6.svg" alt="Telegram icon">
+      </a>
+    </li>
+    <li class="main__link">
+      <a href="#" class="main__links" target="_blank"><img class="main__images" 
+        src="./images/Combined_Shape_Copy_5.svg" alt="Facebook icon">
+      </a>
+    </li>
+  </ul>
+  </div>
 </body>
 </html>

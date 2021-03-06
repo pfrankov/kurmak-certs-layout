@@ -1,4 +1,18 @@
 .main__certificate {
   vertical-align: top; /* убираем лишние пиксели снизу картинки */
+  margin: 0 0 30px 0;
   max-width: 384px;
+}
+
+@media screen and (max-width: 1160px) {
+  .main__certificate {
+    margin: 0 0 64px 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main__certificate {
+    margin: 0 0 50px 0;
+    max-width: 280px;
+  }
 }

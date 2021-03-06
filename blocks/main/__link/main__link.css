@@ -1,0 +1,13 @@
+.main__link {
+  margin-right: 28px;
+}
+
+.main__link:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 440px) {
+  .main__link {
+    margin-right: 24px;
+  }
+}

@@ -1,3 +1,4 @@
 .main__text {
-  
+  grid-area: main-text;
+  grid-column: 1;
 }

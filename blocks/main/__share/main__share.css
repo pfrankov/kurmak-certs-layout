@@ -1,14 +1,14 @@
-.main__time {
-  margin: 0;
-  width: 350px;
+.main__share {
+  margin: 0 0 10px 0;
+  grid-column: 5;
+  justify-self: end;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
 @media screen and (max-width: 440px) {
-  .main__time {
-    max-width: 280px;
+  .main__share {
     font-size: 16px;
     line-height: 24px;
   }

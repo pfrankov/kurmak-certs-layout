@@ -1,0 +1,20 @@
+.main__content {
+  margin: 23px 0;
+  grid-area: main-content;
+  justify-self: end;
+  grid-column: -1/4;
+}
+
+@media screen and (max-width: 1160px) {
+  .main__content {
+    grid-column: auto;
+    justify-self: auto;
+    margin: 59px 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main__content {
+    margin: 41px 0;
+  }
+}

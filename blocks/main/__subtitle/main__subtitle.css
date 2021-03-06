@@ -1,7 +1,22 @@
 .main__subtitle {
-  margin: 0;
+  margin: 0 0 59px 0;
+  max-width: 625px; /* не очень нравится как выглядит этот блок в девтулз. с width выглядит лучше */
   font-weight: 400;
   font-size: 90px;
   line-height: 90px;
-  letter-spacing: -.01em; /* проверить необходимость по PerfectPixel */
+  letter-spacing: -0.01em; 
+}
+
+@media screen and (max-width: 710px) {
+  .main__subtitle {
+    margin: 0 0 30px 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main__subtitle {
+    
+  }
 }

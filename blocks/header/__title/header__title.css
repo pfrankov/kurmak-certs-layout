@@ -1,9 +1,26 @@
 .header__title {
-  margin: 0;
+  display: block;
+  margin: 47px 0 87px 0;
   padding: 0;
+  width: 113px;
+  height: 24px;
   text-decoration: none;
   color: #95FCDE;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 710px) {
+  .header__title {
+    margin: 32px 0 55px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header__title {
+    margin: 32px 0 50px 0;
+  }
 }
