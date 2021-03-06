@@ -1,0 +1,11 @@
+@import './__grid/main__grid.css';
+
+.main {
+  padding-top: 87px;
+}
+
+@media (max-width: 320px) {
+  .main {
+    padding-top: 55px;
+  }
+}

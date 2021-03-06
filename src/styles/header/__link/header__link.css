@@ -1,0 +1,10 @@
+.header__link {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: #95FCDE;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}

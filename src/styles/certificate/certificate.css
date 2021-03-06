@@ -1,0 +1,26 @@
+@import './__paragraph/certificate__paragraph.css';
+@import './__header/certificate__header.css';
+@import './__subheader/certificate__subheader.css';
+@import './__info/certificate__info.css';
+@import './__image-block/certificate__image-block.css';
+@import './__image/certificate__image.css';
+
+.certificate {
+  margin: 0;
+
+  background: black;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .certificate {
+    padding-bottom: 192px;
+  }
+}
+
+@media (max-width: 320px) {
+  .certificate {
+    padding-bottom: 75px;
+  }
+}

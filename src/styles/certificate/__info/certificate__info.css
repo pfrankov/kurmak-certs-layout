@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .certificate__info {
+    margin-bottom: 59px;
+  }
+}
+
+@media (max-width: 320px) {
+  .certificate__info {
+    margin-bottom: 41px;
+  }
+}

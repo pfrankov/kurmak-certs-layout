@@ -1,0 +1,7 @@
+.share__grid {
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  grid-gap: 28px;
+}

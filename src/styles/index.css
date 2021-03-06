@@ -1,0 +1,12 @@
+/* Fonts */
+@import '../vendor/fonts/epilogue/font.css';
+@import '../vendor/fonts/inter/font.css';
+
+/* Blocks */ 
+@import './certificate/certificate.css';
+@import './header/header.css';
+@import './main/main.css';
+@import './share/share.css';
+
+/* Global */
+@import './container/container.css';

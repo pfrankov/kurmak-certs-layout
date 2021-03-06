@@ -1,0 +1,20 @@
+@import './_uppercase/certificate__header_uppercase.css';
+
+.certificate__header {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+
+  margin-block-start: 30px;
+  margin-block-end: 59px;
+}
+
+@media (max-width: 320px) {
+  .certificate__header {
+    font-size: 40px;
+    line-height: 40px;
+
+    margin-block-start: 15px;
+    margin-block-end: 30px;
+  }
+}

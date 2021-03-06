@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Epilogue';
+  src: url('Epilogue-Regular.eot');
+  src: url('Epilogue-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Epilogue-Regular.svg#Epilogue-Regular') format('svg'),
+       url('Epilogue-Regular.ttf') format('truetype'),
+       url('Epilogue-Regular.woff') format('woff'),
+       url('Epilogue-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
