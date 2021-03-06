@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate</title>
+  <link rel="stylesheet" href="./pages/certificate.css">
+</head>
+<body class="page">
+
+  <!-- ===
+  sprites -->
+  <svg style="display: none">
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <g>
+        <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+      </g>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 512 512">
+      <g>
+        <g>
+          <path d="M507.49,101.721L352.211,256L507.49,410.279c2.807-5.867,4.51-12.353,4.51-19.279V121
+            C512,114.073,510.297,107.588,507.49,101.721z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M467,76H45c-6.927,0-13.412,1.703-19.279,4.51l198.463,197.463c17.548,17.548,46.084,17.548,63.632,0L486.279,80.51
+            C480.412,77.703,473.927,76,467,76z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M4.51,101.721C1.703,107.588,0,114.073,0,121v270c0,6.927,1.703,13.413,4.51,19.279L159.789,256L4.51,101.721z"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <path d="M331,277.211l-21.973,21.973c-29.239,29.239-76.816,29.239-106.055,0L181,277.211L25.721,431.49
+            C31.588,434.297,38.073,436,45,436h422c6.927,0,13.412-1.703,19.279-4.51L331,277.211z"/>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <g>
+        <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ===
+  header -->
+
+  <header class="section header">
+    <a href="#" class="header__link">kurmak.info</a>
+  </header>
+
+  <main class="content">
+
+    <!-- ===
+    certificate -->
+
+    <section class="section certificate">
+      <div class="cetrificate__info">
+        <p class="certificate__label">Certificate</p>
+        <h1 class="cetrificate__title">Digital Accessibility Course</h1>
+        <p class="certificate__holder-label">Completed by</p>
+        <p class="certificate__holder-name">Sergey Shiryaev</p>
+        <p class="certificate__date">November 7, 2020</p>
+        <p class="certificate__standing">5 weeks of study, 8 hours per week.</p>
+      </div>
+
+      <div class="certificate__photo">
+        <img class="certificate__image" src="./images/certify-1.jpg" alt="Certificate Image">
+      </div>
+
+      <div class="socials">
+        <p class="socials__label">Share</p>
+
+        <ul class="socials__list">
+          <li class="socials__list-item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="#mail"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__list-item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__list-item">
+            <a href="#" class="socials__link">
+              <svg class="socials__icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section"></footer>
+</body>
+</html>
