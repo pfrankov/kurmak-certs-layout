@@ -1,0 +1,27 @@
+{
+  "name": "certificate",
+  "version": "1.0.0",
+  "description": "У Леры Курмак очень крутой курс по цифровой доступности и я — фронтенд-разработчик с 14 годами опыта — помогаю ей абсолютно безвозмездно.  \r Прямо сейчас требуется сверстать страницу, где будут отображаться сертификаты студентов. Вместо того, чтобы сделать это самому, я решил попробовать другой формат: вы верстаете, а я даю комментарии. Вы учитесь чему-то новому, а я получаю вашу благодарность и тешу своё менторское самолюбие. Лучшее решение я прикручу на сайт курса.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grads521/kurmak-certs-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grads521/kurmak-certs-layout/issues"
+  },
+  "homepage": "https://github.com/Grads521/kurmak-certs-layout#readme",
+  "dependencies": {
+    "vite": "^2.0.5",
+    "vite-less-resource-loader": "^1.0.0",
+    "vite-plugin-css": "^1.0.4"
+  },
+  "devDependencies": {
+    "less": "^4.1.1"
+  }
+}
