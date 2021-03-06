@@ -1,0 +1,14 @@
+.header__text {
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@media (max-width: 320px) {
+  .header__text {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+}

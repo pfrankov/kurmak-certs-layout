@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .certificate__image-block {
+    margin-bottom: 64px;
+  }
+}
