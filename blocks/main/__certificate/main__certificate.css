@@ -1,0 +1,4 @@
+.main__certificate {
+  vertical-align: top; /* убираем лишние пиксели снизу картинки */
+  max-width: 384px;
+}
