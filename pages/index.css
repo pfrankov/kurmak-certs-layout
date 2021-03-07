@@ -215,12 +215,12 @@ fonts */
 }
 
 @font-face {
-  font-family: 'Abrakadabra';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../vendor/fonts/Abrakadabra-Regular.woff2) format('woff2'),
-       url(../vendor/fonts/Abrakadabra-Regular.woff) format('woff');
+  src: url(../vendor/fonts/OpenSans-Regular.woff2) format('woff2'),
+       url(../vendor/fonts/OpenSans-Regular.woff) format('woff');
 }
 
 /* ===
@@ -229,7 +229,23 @@ page */
 .page {
   /* CSS Custom Properties */
   --page-font-size: 20px;
+
   --header-link-font-size: 20px;
+  --header-link-font-size-xs: 16px;
+
+  --certificate-label-font-size: 20px;
+  --certificate-label-font-size-xs: 16px;
+  --cetrificate-title-font-size: 90px;
+  --cetrificate-title-font-size-sm: 40px;
+  --certificate-holder-name-font-size: 40px;
+  --certificate-holder-name-font-size-xs: 24px;
+  --certificate-date-font-size: 20px;
+  --certificate-date-font-size-xs: 16px;
+  --certificate-standing-font-size: 20px;
+  --certificate-standing-font-size-xs: 16px;
+
+  --socials-label-font-size: 20px;
+  --socials-label-font-size-xs: 16px;
 
   background-color: #1F1F24;
 
@@ -254,19 +270,20 @@ page */
 
 @media screen and (max-width: 1439px) {
   .section {
-    max-width: 80%;
+    margin: 0 140px;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 1365px) {
   .section {
-    max-width: calc(100% - 44px*2);
+    margin: 0 44px;
   }
 }
 
 @media screen and (max-width: 413px) {
   .section {
-    max-width: calc(100% - 20px*2);
+    margin: 0 20px;
   }
 }
 
@@ -291,12 +308,12 @@ header */
   color: #95FCDE;
   text-decoration: none;
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 @media screen and (max-width: 413px) {
   .header__link {
-    font-size: calc(0.8 * var(--header-link-font-size));
+    font-size: var(--header-link-font-size-xs);
     line-height: 1.2;
   }
 }
@@ -330,19 +347,26 @@ certificate */
   }
 }
 
+.cetrificate__info {
+  display: flex;
+  flex-direction: column;
+}
+
 .certificate__label {
+  order: -1;
+
   margin: 0;
 
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--certificate-label-font-size);
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 413px) {
   .certificate__label {
-    font-size: 16px;
+    font-size: var(--certificate-label-font-size-xs);
     line-height: 1.2;
   }
 }
@@ -352,16 +376,16 @@ certificate */
   margin-bottom: 0;
 
   text-transform: uppercase;
-  font-family: 'Abrakadabra', 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 90px;
+  font-size: var(--cetrificate-title-font-size);
   line-height: 1;
   letter-spacing: -0.01em;
 }
 
 @media screen and (max-width: 767px) {
   .cetrificate__title {
-    font-size: 40px;
+    font-size: var(--cetrificate-title-font-size-sm);
   }
 }
 
@@ -372,35 +396,26 @@ certificate */
 }
 
 .certificate__holder-label {
+  display: block;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.certificate__holder-name {
   margin-top: 59px;
   margin-bottom: 0;
 
   font-weight: 600;
-  font-size: 40px;
-  line-height: 1.1;
-}
-
-@media screen and (max-width: 413px) {
-  .certificate__holder-label {
-    margin-top: 30px;
-
-    font-size: 24px;
-    line-height: 1.17;
-  }
-}
-
-.certificate__holder-name {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  font-weight: 600;
-  font-size: 40px;
+  font-size: var(--certificate-holder-name-font-size);
   line-height: 1.1;
 }
 
 @media screen and (max-width: 413px) {
   .certificate__holder-name {
-    font-size: 24px;
+    margin-top: 30px;
+
+    font-size: var(--certificate-holder-name-font-size-xs);
     line-height: 1.17;
   }
 }
@@ -416,7 +431,7 @@ certificate */
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--certificate-date-font-size);
   line-height: 1.5;
 }
 
@@ -424,7 +439,7 @@ certificate */
   .certificate__date {
     margin-top: 15px;
 
-    font-size: 16px;
+    font-size: var(--certificate-date-font-size-xs);
   }
 }
 
@@ -433,13 +448,13 @@ certificate */
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--certificate-standing-font-size);
   line-height: 1.5;
 }
 
 @media screen and (max-width: 413px) {
   .certificate__standing {
-    font-size: 16px;
+    font-size: var(--certificate-standing-font-size-xs);
   }
 }
 
@@ -491,7 +506,7 @@ socials */
   margin-bottom: 10px;
 
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--socials-label-font-size);
   line-height: 1.5;
 }
 
@@ -505,7 +520,7 @@ socials */
   .socials__label {
     margin-top: 0;
 
-    font-size: 16px;
+    font-size: var(--socials-label-font-size-xs);
   }
 }
 
@@ -536,7 +551,7 @@ socials */
 
   border-radius: 50%;
   background-color: white;
-  transition: all 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 413px) {
@@ -555,7 +570,7 @@ socials */
   height: 36px;
 
   fill: black;
-  transition: all 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
 @media screen and (max-width: 413px) {
