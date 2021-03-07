@@ -191,32 +191,36 @@ fonts */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url(./Inter-Regular.woff2) format('woff2'),
-       url(./Inter-Regular.woff) format('woff');
+  font-display: swap;
+  src: url(../vendor/fonts/Inter-Regular.woff2) format('woff2'),
+       url(../vendor/fonts/Inter-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url(./Inter-Medium.woff2) format('woff2'),
-       url(./Inter-Medium.woff) format('woff');
+  font-display: swap;
+  src: url(../vendor/fonts/Inter-Medium.woff2) format('woff2'),
+       url(../vendor/fonts/Inter-Medium.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url(./Inter-SemiBold.woff2) format('woff2'),
-       url(./Inter-SemiBold.woff) format('woff');
+  font-display: swap;
+  src: url(../vendor/fonts/Inter-SemiBold.woff2) format('woff2'),
+       url(../vendor/fonts/Inter-SemiBold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Abrakadabra';
   font-style: normal;
   font-weight: 400;
-  src: url(./Abrakadabra-Regular.woff2) format('woff2'),
-       url(./Abrakadabra-Regular.woff) format('woff');
+  font-display: swap;
+  src: url(../vendor/fonts/Abrakadabra-Regular.woff2) format('woff2'),
+       url(../vendor/fonts/Abrakadabra-Regular.woff) format('woff');
 }
 
 /* ===
@@ -408,7 +412,7 @@ certificate */
 .certificate__date {
   display: block;
 
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
 
   font-weight: 400;
@@ -425,7 +429,7 @@ certificate */
 }
 
 .certificate__standing {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
 
   font-weight: 400;
@@ -463,6 +467,7 @@ certificate */
   display: block;
 
   max-width: 100%;
+  height: auto;
 
   object-fit: contain;
   box-shadow: 0 0 100px rgba(149,252,222, 0.1);
