@@ -20,10 +20,10 @@ main {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.homeLink {
+.home-link {
   display: block;
   color: #95fcde;
   font-weight: 600;
@@ -31,14 +31,19 @@ main {
   margin-bottom: 87px;
 }
 
-.information > h3 {
+.titles-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.titles-wrapper__subtitle {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
-.information > h1 {
+.titles-wrapper__title {
   font-family: "Almarai", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
@@ -48,41 +53,41 @@ main {
   max-width: 625px;
 }
 
-.information__name {
+.information-section__name {
   margin-bottom: 20px;
 }
 
-.information__name > p {
+.information-section__name > span {
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
 }
 
-.information__date > p {
+.information-section-section__date > span {
   line-height: 1.5;
 }
 
-.certificate {
+.certificate-section {
   max-width: 384px;
 }
 
-.certificate > img {
+.certificate-section > img {
   width: 100%;
   object-fit: contain;
   margin-bottom: 30px;
   box-shadow: 0 30px 100px 0 rgba(149, 252, 222, 0.1);
 }
 
-.shareLinks > p {
+.links-for-sharing > p {
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.shareLinks > div {
+.links-for-sharing > div {
   white-space: nowrap;
 }
 
-.shareLinks > div :nth-child(2n) {
+.links-for-sharing > div :nth-child(2n) {
   margin: 0 28px;
   height: 100%;
 }
@@ -99,13 +104,13 @@ main {
     align-items: flex-start;
   }
 
-  .information {
+  .information-section {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
-   .information > h1 {
+  .information-section__title {
      font-size: 12vw;
    }
 }
@@ -117,42 +122,42 @@ main {
     margin-bottom: 75px;
   }
 
-  .homeLink {
+  .home-link {
     margin-bottom: 55px;
   }
 
-  .information {
+  .information-section {
     margin-bottom: 41px;
   }
 
-  .information > h3 {
+  .information-section__subtitle {
     margin-bottom: 15px;
     font-size: 16px;
   }
 
-  .information > h1 {
+ .information-section__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
 
-  .information__name {
+  .information-section__name {
     margin-bottom: 15px;
   }
 
-  .information__name > p {
+  .information-section__name > span {
     font-size: 24px;
     line-height: 1.17;
   }
 
-  .information__date > p {
+  .information-section__date > span {
     font-size: 16px;
   }
 
-  .shareLinks div {
+  .links-for-sharing div {
     height: 10px;
   }
 
-  .shareLinks img {
+  .links-for-sharing img {
     width: 48px;
   }
 }
