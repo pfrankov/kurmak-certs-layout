@@ -23,17 +23,20 @@ main {
   align-items: flex-start;
 }
 
+header {
+  margin-bottom: 87px;
+}
+
 .home-link {
-  display: block;
   color: #95fcde;
   font-weight: 600;
   text-decoration: none;
-  margin-bottom: 87px;
 }
 
 .titles-wrapper {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 60px;
 }
 
 .titles-wrapper__subtitle {
@@ -49,7 +52,7 @@ main {
   font-weight: 300;
   font-size: 90px;
   line-height: 1;
-  margin-bottom: 60px;
+
   max-width: 625px;
 }
 
@@ -69,6 +72,7 @@ main {
 
 .certificate-section {
   max-width: 384px;
+  margin-top: 13px;
 }
 
 .certificate-section > img {
@@ -110,9 +114,13 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-  .information-section__title {
-     font-size: 12vw;
-   }
+  .titles-wrapper__title {
+    font-size: 12vw;
+  }
+
+  .information-section__name > span {
+    font-size: 6vw;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -122,7 +130,7 @@ main {
     margin-bottom: 75px;
   }
 
-  .home-link {
+  header {
     margin-bottom: 55px;
   }
 
@@ -135,7 +143,7 @@ main {
     font-size: 16px;
   }
 
- .information-section__title {
+  .information-section__title {
     font-size: 40px;
     margin-bottom: 30px;
   }
