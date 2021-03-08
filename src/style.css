@@ -66,13 +66,13 @@ header {
   max-width: 625px;
 }
 
-.information-section__name {
+.information-section__name, .information-section__name span {
+  font-size: var(--name-font-size);
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .information-section__name > span {
-  font-size: var(--name-font-size);
-  font-weight: 600;
   line-height: 1.1;
 }
 
