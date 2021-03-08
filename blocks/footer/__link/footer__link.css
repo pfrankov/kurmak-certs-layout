@@ -1,0 +1,8 @@
+.footer__link {
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}

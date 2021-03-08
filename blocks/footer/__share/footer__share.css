@@ -1,0 +1,11 @@
+.footer__share {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    min-width: 384px;
+    padding-top: 18px;
+}

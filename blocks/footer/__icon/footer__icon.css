@@ -1,0 +1,9 @@
+.footer__icon {
+    min-width: 56px;
+    min-height: 56px;
+    margin-right: 28px;
+}
+
+.footer__icon:last-child {
+    margin-right: 0;
+}
