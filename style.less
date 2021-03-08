@@ -6,24 +6,195 @@
   font-family: "abrakadabra";
   src: url("fonts/Abrakadabra-Regular.ttf") format("opentype");
 }
-body {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  justify-content: space-between;
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  width: 1440px;
+    width: 1440px;
+  }
+  .leftShiftTextInfo {
+    margin-left: 140px;
+  }
+  .info {
+    margin-top: 47px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .textCertificate {
+    margin-top: 87px;
+
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .nameCourse {
+    margin-top: 15px;
+
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .textComplete {
+    margin-top: 59px;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .dataEnd {
+    margin-top: 20px;
+
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .imgCertificate {
+    margin-top: 181px;
+    margin-right: 140px;
+  }
+  .share {
+    margin-top: 30px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blockLabels {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+
+    width: 768px;
+  }
+
+  .leftShiftTextInfo {
+    margin-left: 44px;
+  }
+  .leftShiftImg {
+    margin-left: 44px;
+  }
+  .info {
+    margin-top: 47px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .textCertificate {
+    margin-top: 87px;
+
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .nameCourse {
+    margin-top: 15px;
+
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .textComplete {
+    margin-top: 59px;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .dataEnd{
+    margin-top: 20px;
+
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .imgCertificate {
+    margin-top: 59px;
+  }
+  .share {
+    margin-top: 64px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blockLabels {
+    width: 224px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    height: 1052px;
+  }
+  .leftShiftTextInfo {
+    margin-left: 20px;
+  }
+  .leftShiftImg {
+    margin-left: 20px;
+  }
+  .info {
+    margin-top: 32px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .textCertificate {
+    margin-top: 55px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .nameCourse {
+    margin-top: 15px;
+
+    width: 280px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .textComplete {
+    margin-top: 30px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .dataEnd{
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .imgCertificate img {
+    margin-top: 41px;
+
+    width: 280px;
+  }
+  .share {
+    margin-top: 50px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blockLabels {
+    width: 192px;
+  }
+  .blockLabels img {
+    width: 48px;
+  }
+}
+body {
+  background-color: black;
 }
 .info {
   position: relative;
-  margin-left: 140px;
-  margin-top: 47px;
 
   font-family: "inter", sans-serif;
-  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
   letter-spacing: -0.01em;
   text-align: left;
 
@@ -31,36 +202,22 @@ body {
 }
 .textCertificate {
   position: relative;
-  margin-left: 140px;
-  margin-top: 87px;
 
   font-family: "inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 36px;
   text-transform: uppercase;
-  /* identical to box height, or 180% */
-
   letter-spacing: 0.03em;
 
   color: #FFFFFF;
 }
 .nameCourse {
-  /* Digital Accessibility Course */
-
   position: relative;
-  margin-left: 140px;
-  margin-top: 30px;
 
   font-family: "abrakadabra", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 90px;
-  line-height: 90px;
   text-transform: uppercase;
-  /* or 100% */
-
   letter-spacing: -0.01em;
 
   color: #FFFFFF;
@@ -68,48 +225,30 @@ body {
 .textComplete {
   position: relative;
   margin-top: 59px;
-  margin-left: 140px;
 
   font-family: "inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 44px;
-  /* or 110% */
 
   color: #FFFFFF;
 }
 .dataEnd {
   position: relative;
-  margin-top: 20px;
-  margin-left: 140px;
 
   font-family: "inter", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 36px;
-  /* identical to box height, or 180% */
-
-  letter-spacing: 0.03em;
 
   color: #FFFFFF;
 }
-.imageCertificate {
+.imgCertificate {
   position: relative;
-  margin-top: 181px;
-  margin-right: 140px;
 }
 .share {
   position: relative;
-  margin-top: 30px;
 
   font-family: "inter", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height, or 150% */
 
   color: #FFFFFF;
 }
@@ -117,7 +256,5 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
-
-  width: 224px;
+  margin-top: 10px;
 }
