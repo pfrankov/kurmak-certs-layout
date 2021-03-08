@@ -1,9 +1,20 @@
+:root {
+  --global-font-size: 20px;
+  --title-font-size: 90px;
+  --name-font-size: 40px;
+
+  /*For Mobile*/
+  --subtitle-font-size-mobile: 16px;
+  --title-font-size-mobile: 40px;
+  --name-font-size-mobile: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: var(--global-font-size);
 }
 
 body {
@@ -50,7 +61,7 @@ header {
   font-family: "Almarai", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 90px;
+  font-size: var(--title-font-size);
   line-height: 1;
   max-width: 625px;
 }
@@ -60,7 +71,7 @@ header {
 }
 
 .information-section__name > span {
-  font-size: 40px;
+  font-size: var(--name-font-size);
   font-weight: 600;
   line-height: 1.1;
 }
@@ -139,7 +150,7 @@ header {
 
   .information-section__subtitle {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: var(--subtitle-font-size-mobile)
   }
 
   .information-section__title {
@@ -152,12 +163,12 @@ header {
   }
 
   .information-section__name > span {
-    font-size: 24px;
+    font-size: var(--name-font-size-mobile);
     line-height: 1.17;
   }
 
   .information-section__date > span {
-    font-size: 16px;
+    font-size: var(--subtitle-font-size-mobile)
   }
 
   .links-for-sharing div {
