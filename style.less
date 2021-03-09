@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: "inter";
   src: url("fonts/Inter-Regular.ttf") format("opentype");
@@ -7,25 +11,28 @@
   src: url("fonts/Abrakadabra-Regular.ttf") format("opentype");
 }
 @media screen and (min-width: 1440px) {
-  body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 1440px;
-  }
-  .leftShiftTextInfo {
-    margin-left: 140px;
-  }
   .info {
     margin-top: 47px;
+    margin-left: 140px;
 
     font-size: 20px;
     line-height: 24px;
   }
-  .textCertificate {
-    margin-top: 87px;
+  .decor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+    margin-top: 87px;
+    width: 1440px;
+  }
+  .blockLeft {
+    margin-left: 140px;
+  }
+  .blockRight {
+    margin-right: 140px;
+  }
+  .textCertificate {
     font-size: 20px;
     line-height: 36px;
   }
@@ -49,9 +56,16 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .imgCertificate {
-    margin-top: 181px;
-    margin-right: 140px;
+  .backLight {
+    //margin-top: 280px;
+    //margin-right: 200px;
+
+    width: 473px;
+    height: 495px;
+
+    background: #95FCDE;
+    opacity: 0.1;
+    filter: blur(100px);
   }
   .share {
     margin-top: 30px;
@@ -70,18 +84,15 @@
 
     width: 768px;
   }
-
-  .leftShiftTextInfo {
-    margin-left: 44px;
-  }
-  .leftShiftImg {
-    margin-left: 44px;
-  }
   .info {
     margin-top: 47px;
+    margin-left: 44px;
 
     font-size: 20px;
     line-height: 24px;
+  }
+  .decor {
+    margin: 44px;
   }
   .textCertificate {
     margin-top: 87px;
@@ -130,17 +141,15 @@
     width: 320px;
     height: 1052px;
   }
-  .leftShiftTextInfo {
-    margin-left: 20px;
-  }
-  .leftShiftImg {
-    margin-left: 20px;
-  }
   .info {
     margin-top: 32px;
+    margin-left: 20px;
 
     font-size: 16px;
     line-height: 19px;
+  }
+  .decor {
+    margin: 20px;
   }
   .textCertificate {
     margin-top: 55px;
@@ -186,9 +195,7 @@
     width: 48px;
   }
 }
-body {
-  background-color: black;
-}
+
 .info {
   position: relative;
 
@@ -199,6 +206,9 @@ body {
   text-align: left;
 
   color: #95FCDE;
+}
+body {
+  background-color: #1F1F24;
 }
 .textCertificate {
   position: relative;
@@ -214,6 +224,7 @@ body {
 .nameCourse {
   position: relative;
 
+  white-space: pre-line;
   font-family: "abrakadabra", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -242,6 +253,12 @@ body {
 }
 .imgCertificate {
   position: relative;
+}
+.backLight {
+  position: relative;
+  z-index: 0;
+
+  float: right;
 }
 .share {
   position: relative;
