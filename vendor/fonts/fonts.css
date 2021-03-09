@@ -7,20 +7,18 @@
          url(../fonts/Inter-Regular.woff) format("woff");
 }
 
-@font-face {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../fonts/Inter-Medium.woff2) format("woff2"),
-         url(../fonts/Inter-Medium.woff) format("woff");
-  }
-
   @font-face {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url(../fonts/Inter-Black.woff2) format("woff2"),
-         url(../fonts/Inter-Black.woff) format("woff");
-  }
+     font-family: 'Abrakadabra';
+     font-style: normal;
+     font-weight: normal;
+     src: url(../fonts/Abrakadabra-Regular.woff2) format('woff2'),
+          url(../fonts/Abrakadabra-Regular.woff) format('woff');
+}
+
+@font-face {
+     font-family: 'Inter';
+     font-style:  normal;
+     font-weight: 600;
+     font-display: swap;
+     src: url(../fonts/Inter-SemiBold.woff2) format("woff2"),
+          url(../fonts/Inter-SemiBold.woff) format("woff");
