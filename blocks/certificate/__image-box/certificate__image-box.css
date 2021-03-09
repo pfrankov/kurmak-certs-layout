@@ -1,3 +1,16 @@
 .certificate__image-box {
     max-width: 384px;
 }
+
+@media screen and (max-width: 768px) {
+    .certificate__image-box {
+        padding-top: 59px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .certificate__image-box {
+        max-width: 280px;
+        padding-top: 41px;
+    }
+}

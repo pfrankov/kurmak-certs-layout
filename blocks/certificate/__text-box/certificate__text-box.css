@@ -5,3 +5,9 @@
     align-items: flex-start;
     max-width: 625px;
 }
+
+@media screen and (max-width: 425px) {
+    .certificate__text-box {
+        max-width: 280px;
+    }
+}

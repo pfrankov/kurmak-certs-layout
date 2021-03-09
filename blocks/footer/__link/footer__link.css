@@ -1,8 +1,10 @@
 .footer__link {
-    margin: 0;
     display: block;
-    box-sizing: border-box;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
+    max-height: 56px;
+}
+
+@media screen and (max-width: 425px) {
+    .footer__link {
+        max-height: 48px;
+    }
 }

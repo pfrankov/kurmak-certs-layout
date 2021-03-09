@@ -5,3 +5,10 @@
     font-weight: 600;
     font-style: normal;
 }
+
+@media screen and (max-width: 425px) {
+    .certificate__name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

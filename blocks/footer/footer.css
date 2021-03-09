@@ -7,3 +7,20 @@
     padding-top: 30px;
     padding-bottom: 175px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 625px;
+        align-items: flex-start;
+        padding-top: 64px;
+        padding-bottom: 192px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        max-width: 280px;
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+}

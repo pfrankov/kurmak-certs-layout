@@ -1,9 +1,15 @@
 .footer__icon {
-    min-width: 56px;
-    min-height: 56px;
     margin-right: 28px;
 }
 
 .footer__icon:last-child {
     margin-right: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .footer__icon {
+        max-width: 48px;
+        max-height: 48px;
+        margin-right: 24px;
+    }
 }
