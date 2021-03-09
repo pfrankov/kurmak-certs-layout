@@ -327,11 +327,11 @@ header */
 certificate */
 
 .certificate {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr auto;
   -moz-column-gap: 44px;
        column-gap: 44px;
+       row-gap: 60px;
 
   padding-top: 87px;
   padding-bottom: 175px;
@@ -345,6 +345,8 @@ certificate */
 
 @media screen and (max-width: 413px) {
   .certificate {
+    row-gap: 40px;
+
     padding-top: 55px;
     padding-bottom: 75px;
   }
@@ -469,20 +471,6 @@ certificate */
   position: relative;
 
   align-self: end;
-}
-
-@media screen and (max-width: 1365px) {
-  .certificate__photo {
-    margin-top: 59px;
-    margin-bottom: 58px;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  .certificate__photo {
-    margin-top: 41px;
-    margin-bottom: 50px;
-  }
 }
 
 .certificate__image-container {
