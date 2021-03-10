@@ -3,34 +3,32 @@
   padding: 0;
 }
 @font-face {
-  font-family: "inter";
-  src: url("fonts/Inter-Regular.ttf") format("opentype");
+  font-family: "lato";
+  src: url("fonts/Lato-Regular.ttf") format("opentype");
 }
 @font-face {
-  font-family: "abrakadabra";
-  src: url("fonts/Abrakadabra-Regular.ttf") format("opentype");
+  font-family: "notoSans";
+  src: url("fonts/NotoSansKR-Regular.otf") format("opentype");
 }
 @media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+  .generalShift {
+    margin: 47px 140px 47px 140px;
+  }
   .info {
-    margin-top: 47px;
-    margin-left: 140px;
-
     font-size: 20px;
     line-height: 24px;
   }
-  .decor {
+  .decorBlocks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin-top: 87px;
-    width: 1440px;
-  }
-  .blockLeft {
-    margin-left: 140px;
   }
   .blockRight {
-    margin-right: 140px;
+    margin-top: 23px;
   }
   .textCertificate {
     font-size: 20px;
@@ -38,42 +36,30 @@
   }
   .nameCourse {
     margin-top: 15px;
-
     font-size: 90px;
     line-height: 90px;
   }
   .textComplete {
     margin-top: 59px;
-
     font-size: 40px;
     line-height: 44px;
   }
-  .dataEnd {
+  .time {
     margin-top: 20px;
-
     font-weight: 400;
     letter-spacing: 0.03em;
     font-size: 20px;
     line-height: 30px;
   }
-  .backLight {
-    //margin-top: 280px;
-    //margin-right: 200px;
-
-    width: 473px;
-    height: 495px;
-
-    background: #95FCDE;
-    opacity: 0.1;
-    filter: blur(100px);
+  .imgCertificate img {
+    box-shadow: 0px 100px 250px -125px rgba(149, 252, 222, 0.2);
   }
   .share {
     margin-top: 30px;
-
     font-size: 20px;
     line-height: 30px;
   }
-  .blockLabels {
+  .blockLinks {
     width: 224px;
   }
 }
@@ -81,40 +67,34 @@
   body {
     display: flex;
     flex-direction: column;
-
     width: 768px;
   }
   .info {
     margin-top: 47px;
     margin-left: 44px;
-
     font-size: 20px;
     line-height: 24px;
   }
-  .decor {
+  .decorBlocks {
     margin: 44px;
   }
   .textCertificate {
     margin-top: 87px;
-
     font-size: 20px;
     line-height: 36px;
   }
   .nameCourse {
     margin-top: 15px;
-
     font-size: 90px;
     line-height: 90px;
   }
   .textComplete {
     margin-top: 59px;
-
     font-size: 40px;
     line-height: 44px;
   }
-  .dataEnd{
+  .time {
     margin-top: 20px;
-
     font-weight: 400;
     letter-spacing: 0.03em;
     font-size: 20px;
@@ -123,13 +103,16 @@
   .imgCertificate {
     margin-top: 59px;
   }
+  .imgCertificate img {
+    box-shadow: 0px 100px 250px -50px rgba(149, 252, 222, 0.2);
+  }
   .share {
     margin-top: 64px;
 
     font-size: 20px;
     line-height: 30px;
   }
-  .blockLabels {
+  .blockLinks {
     width: 224px;
   }
 }
@@ -137,139 +120,114 @@
   body {
     display: flex;
     flex-direction: column;
-
     width: 320px;
     height: 1052px;
   }
   .info {
     margin-top: 32px;
     margin-left: 20px;
-
     font-size: 16px;
     line-height: 19px;
   }
-  .decor {
+  .decorBlocks {
     margin: 20px;
   }
   .textCertificate {
     margin-top: 55px;
-
     font-size: 16px;
     line-height: 19px;
   }
   .nameCourse {
     margin-top: 15px;
-
     width: 280px;
     font-size: 40px;
     line-height: 40px;
   }
   .textComplete {
     margin-top: 30px;
-
     font-size: 24px;
     line-height: 28px;
   }
-  .dataEnd{
+  .time{
     margin-top: 20px;
-
     font-size: 16px;
     line-height: 24px;
   }
-
   .imgCertificate img {
     margin-top: 41px;
-
+    box-shadow: 0px 50px 250px -50px rgba(149, 252, 222, 0.2);
     width: 280px;
   }
   .share {
     margin-top: 50px;
-
     font-size: 16px;
     line-height: 24px;
   }
-  .blockLabels {
+  .blockLinks {
     width: 192px;
   }
-  .blockLabels img {
+  .blockLinks img {
     width: 48px;
   }
-}
-
-.info {
-  position: relative;
-
-  font-family: "inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  text-align: left;
-
-  color: #95FCDE;
 }
 body {
   background-color: #1F1F24;
 }
+.info {
+  position: relative;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #95FCDE;
+}
 .textCertificate {
   position: relative;
-
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-
   color: #FFFFFF;
 }
 .nameCourse {
   position: relative;
-
   white-space: pre-line;
-  font-family: "abrakadabra", sans-serif;
+  font-family: "notoSans", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-
   color: #FFFFFF;
 }
 .textComplete {
   position: relative;
+  white-space: pre-line;
   margin-top: 59px;
-
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-style: normal;
   font-weight: 600;
-
   color: #FFFFFF;
 }
-.dataEnd {
+.time {
   position: relative;
-
-  font-family: "inter", sans-serif;
+  white-space: pre-line;
+  font-family: "lato", sans-serif;
   font-style: normal;
-
   color: #FFFFFF;
 }
 .imgCertificate {
   position: relative;
 }
-.backLight {
-  position: relative;
-  z-index: 0;
-
-  float: right;
-}
 .share {
   position: relative;
-
-  font-family: "inter", sans-serif;
+  font-family: "lato", sans-serif;
   font-style: normal;
   font-weight: normal;
-
   color: #FFFFFF;
 }
-.blockLabels {
+.blockLinks {
   position: relative;
   display: flex;
   justify-content: space-between;
