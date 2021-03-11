@@ -1,0 +1,24 @@
+@use '../mixin';
+@use '../font';
+
+.share {
+  display: flex;
+
+  &__item {
+    margin-right: 24px;
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    @include mixin.media('tablet') {
+      margin-right: 28px;
+    }
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+  }
+}

@@ -1,0 +1,151 @@
+@use '../mixin';
+@use '../font';
+
+.certificate {
+
+  &__wrapper {
+    @include mixin.media('desktop') {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+    
+    @include mixin.media('tablet') {
+      margin-bottom: 59px;
+    }
+
+    @include mixin.media('desktop') {
+      margin-right: 2em;
+    }
+  }
+  
+  &__title {
+    --fontSize: 38px;
+    --lineHeight: 1;
+
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: font.$accent;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
+    font-weight: font.$weight-normal;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    white-space: pre-line;
+
+    @include mixin.media('tablet') {
+      --fontSize: 90px;
+      
+      margin-bottom: 59px;
+    }
+  }
+
+  &__subtitle {
+    --fontSize: 16px;
+    --lineHeight: 1.2;
+    
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: font.$weight-normal;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @include mixin.media('tablet') {
+      --fontSize: 20px;
+      --lineHeight: 1.8
+
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__owner {
+    --fontSize: 24px;
+    --lineHeight: 1.16;
+
+    display: block;
+    margin-bottom: 15px;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
+    font-weight: font.$weight-semibold;
+    white-space: pre-line;
+    
+    @include mixin.media('tablet') {
+      --fontSize: 40px;
+      --lineHeight: 1.1;
+
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__text {
+    --fontSize: inherit;
+
+    margin: 0;
+    font-weight: font.$weight-normal;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
+    
+    @include mixin.media('tablet') {
+      --fontSize: 20px;
+    }
+  }
+
+  &__showcase {
+
+    @include mixin.media('desktop') {
+      padding-top: 10px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin: 0;
+    margin-bottom: 50px;
+    
+    @include mixin.media('tablet') {
+      margin-bottom: 64px;
+    }
+
+    @include mixin.media('desktop') {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: calc(var(--container-gap) * -1);
+      bottom: -50px;
+      width: 320px;
+      height: 320px;
+      background: #95FCDE;
+      opacity: 0.1;
+      filter: blur(100px);
+      
+      @include mixin.media('tablet') {
+        bottom: -52px;
+        width: 473px;
+        height: 495px;
+      }
+
+      @include mixin.media('desktop') {
+        // image is moved to the right edge, the backdrop is causing an overflow there
+        left: auto;
+        right: calc(var(--container-gap) * -1);
+      }
+    }
+  }
+
+  &__share {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+@use '../mixin';
+
+.header {
+  --header-logo-color: var(--color-accent);
+
+  padding: 32px 0;
+
+  @include mixin.media('tablet') {
+    padding: 47px 0;
+  }
+
+  &__logo {
+    color: var(--header-logo-color);
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+      --header-logo-color: var(--color-text);
+    }
+  }
+}

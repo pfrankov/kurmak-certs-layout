@@ -1,0 +1,22 @@
+@use '../font';
+
+@function generateUrl($url, $extension: 'woff2') {
+  $dir: '../fonts/';
+
+  @return $dir + $url + '.' + $extension;
+}
+
+@mixin font(
+  $family,
+  $url,
+  $weight: font.$weight-normal,
+  $style: font.$style-normal
+) {
+  @font-face {
+    font-family: $family;
+    src: generateUrl($url, 'woff2') format('woff2'),
+         generateUrl($url, 'woff') format('woff'),;
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

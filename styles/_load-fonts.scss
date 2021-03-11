@@ -1,0 +1,13 @@
+/**
+  Examples:
+  @include mixin.font(font.$family, generateUrl('PTSans-Regular'));
+  @include mixin.font(font.$family, generateUrl('PTSans-Bold'), $weight: font.$weight-bold);
+  @include mixin.font(font.$family, generateUrl('PTSans-Italic'), $style: font.$style-italic);
+*/
+
+@use 'mixin';
+@use 'font';
+
+@include mixin.font(font.$epilogue, 'Epilogue/Regular');
+@include mixin.font(font.$inter, 'Inter/Regular');
+@include mixin.font(font.$inter, 'Inter/SemiBold', $weight: font.$weight-semibold);

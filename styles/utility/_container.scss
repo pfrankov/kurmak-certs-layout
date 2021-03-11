@@ -1,0 +1,14 @@
+@use '../mixin';
+@use '../variables';
+
+.container {
+  --container-gap: 20px;
+
+  max-width: calc(#{variables.$container-width} + 2 * var(--container-gap));
+  padding: 0 var(--container-gap);
+  margin: 0 auto;
+
+  @include mixin.media('tablet') {
+    --container-gap: 44px;
+  }
+}
