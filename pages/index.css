@@ -1,4 +1,4 @@
-@import url(../vendor/normalize.css); /* знаю, что не приветствуется, но все же, что скажете? :) */
+@import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/main/main.css);

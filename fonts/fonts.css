@@ -4,6 +4,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
+  font-display: swap
 }
 
 @font-face {
@@ -12,4 +13,14 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
+  font-display: swap
+}
+
+@font-face {
+  src: url('./Livvic-Regular.woff2') format('woff2'),
+    url('./Livvic-Regular.woff') format('woff');
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap
 }
