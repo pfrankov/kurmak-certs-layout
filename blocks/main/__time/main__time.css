@@ -1,0 +1,15 @@
+.main__time {
+  margin: 0;
+  width: 350px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 440px) {
+  .main__time {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}

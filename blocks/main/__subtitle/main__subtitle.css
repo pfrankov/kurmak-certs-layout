@@ -1,0 +1,24 @@
+.main__subtitle {
+  font-family: 'Livvic', 'Inter', sans-serif;
+  margin: 0 0 59px 0;
+  width: 625px;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 1em;
+  letter-spacing: 1px; 
+}
+
+@media screen and (max-width: 710px) {
+  .main__subtitle {
+    margin: 0 0 30px 0;
+    width: 325px;
+    font-size: 40px;
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main__subtitle {
+    width: 280px;
+  }
+}

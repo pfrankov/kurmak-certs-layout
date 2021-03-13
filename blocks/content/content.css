@@ -1,0 +1,21 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 1160px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main-text"
+    "main-content";
+    padding-left: 44px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .content {
+    padding-left: 20px;
+  }
+}

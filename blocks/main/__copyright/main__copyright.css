@@ -1,0 +1,10 @@
+.main__copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 440px) {
+  .main__copyright {
+    max-width: 280px;
+  }
+}
