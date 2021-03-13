@@ -1,28 +1,8 @@
 .page {
   min-width: 300px;
   max-width: 1160px;
-  margin: 0 auto; /* отцентровали для экранов больше 1160px */
-  display: grid;
-  grid-template-columns: repeat(7, 140px);
-  column-gap: 30px;
+  margin: 0 auto;
   font-family: 'Inter', Arial, sans-serif;
   background-color: #1F1F24;
   color: #fff;
-}
-
-@media screen and (max-width: 1160px) {
-  .page {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "main-text"
-    "main-content";
-    padding-left: 44px;
-  }
-}
-
-@media screen and (max-width: 710px) {
-  .page {
-    padding-left: 20px;
-  }
 }
