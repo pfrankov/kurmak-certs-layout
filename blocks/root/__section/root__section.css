@@ -1,0 +1,15 @@
+.root__section {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .root__section {
+        margin-left: 44px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .root__section {
+        margin: 0 auto;
+    }
+}

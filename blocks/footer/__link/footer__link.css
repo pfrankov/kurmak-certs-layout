@@ -1,0 +1,10 @@
+.footer__link {
+    display: block;
+    max-height: 56px;
+}
+
+@media screen and (max-width: 425px) {
+    .footer__link {
+        max-height: 48px;
+    }
+}

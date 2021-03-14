@@ -1,0 +1,24 @@
+.certificate {
+    max-width: 1160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 87px;
+}
+
+@media screen and (max-width: 768px) {
+    .certificate {
+        flex-direction: column;
+        max-width: 625px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .certificate {
+        max-width: 280px;
+        padding-top: 55px;
+        align-items: center;
+    }
+}

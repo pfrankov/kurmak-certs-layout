@@ -1,0 +1,16 @@
+.certificate__student {
+    margin: 0;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 59px;
+}
+
+@media screen and (max-width: 425px) {
+    .certificate__student {
+        font-size: 24px;
+        line-height: 28px;
+        padding-top: 30px;
+    }
+}
