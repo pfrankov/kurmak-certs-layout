@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const autoprefixer = require('autoprefixer')
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -52,7 +53,22 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer({
+                    overrideBrowserslist: ['> 1%']
+                  })
+                ],
+                sourceMap: true
+              }
+            }
+          }]
       },
       {
         test: /\.(png|jpg|svg|gif)$/,

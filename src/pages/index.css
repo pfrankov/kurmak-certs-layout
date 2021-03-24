@@ -228,40 +228,39 @@ fonts */
 page */
 
 .page {
-  /* CSS Custom Properties */
-  --page-font-size: 20px;
+  --title-fs: 90px;
+  --subtitle-fs: 40px;
+  --text-fs: 20px;
 
-  --header-link-font-size: 20px;
-  --header-link-font-size-xs: 16px;
+  --color-bg: #1F1F24;
+  --coloron-bg: white;
+  --accent-color: #95FCDE;
 
-  --certificate-label-font-size: 20px;
-  --certificate-label-font-size-xs: 16px;
-  --cetrificate-title-font-size: 90px;
-  --cetrificate-title-font-size-sm: 40px;
-  --certificate-holder-name-font-size: 40px;
-  --certificate-holder-name-font-size-xs: 24px;
-  --certificate-date-font-size: 20px;
-  --certificate-date-font-size-xs: 16px;
-  --certificate-standing-font-size: 20px;
-  --certificate-standing-font-size-xs: 16px;
-
-  --socials-label-font-size: 20px;
-  --socials-label-font-size-xs: 16px;
-
-  background-color: #1F1F24;
-
+  background-color: var(--color-bg);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: var(--page-font-size);
+  font-size: var(--text-fs);
   font-weight: 400;
-  color: white;
+  color: var(--coloron-bg);
 
-  /* Fonts Optimization */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    --title-fs: 40px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .page {
+    --subtitle-fs: 24px;
+    --text-fs: 16px;
+  }
 }
 
 .section {
@@ -303,20 +302,13 @@ header */
 
 .header__link {
   font-weight: 600;
-  font-size: var(--header-link-font-size);
+  font-size: var(--text-fs);
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #95FCDE;
+  color: var(--accent-color);
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.3s ease;
-}
-
-@media screen and (max-width: 413px) {
-  .header__link {
-    font-size: var(--header-link-font-size-xs);
-    line-height: 1.2;
-  }
 }
 
 .header__link:hover {
@@ -364,16 +356,9 @@ certificate */
 
   text-transform: uppercase;
   font-weight: 600;
-  font-size: var(--certificate-label-font-size);
+  font-size: var(--text-fs);
   line-height: 1.8;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 413px) {
-  .certificate__label {
-    font-size: var(--certificate-label-font-size-xs);
-    line-height: 1.2;
-  }
 }
 
 .cetrificate__title {
@@ -383,15 +368,9 @@ certificate */
   text-transform: uppercase;
   font-family: 'Open Sans', 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: var(--cetrificate-title-font-size);
+  font-size: var(--title-fs);
   line-height: 1;
   letter-spacing: -0.01em;
-}
-
-@media screen and (max-width: 767px) {
-  .cetrificate__title {
-    font-size: var(--cetrificate-title-font-size-sm);
-  }
 }
 
 @media screen and (max-width: 413px) {
@@ -412,25 +391,14 @@ certificate */
   margin-bottom: 0;
 
   font-weight: 600;
-  font-size: var(--certificate-holder-name-font-size);
+  font-size: var(--subtitle-fs);
   line-height: 1.1;
 }
 
 @media screen and (max-width: 413px) {
   .certificate__holder-name {
     margin-top: 30px;
-
-    font-size: var(--certificate-holder-name-font-size-xs);
-    line-height: 1.17;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 .certificate__date {
@@ -440,15 +408,13 @@ certificate */
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: var(--certificate-date-font-size);
+  font-size: var(--text-fs);
   line-height: 1.5;
 }
 
 @media screen and (max-width: 413px) {
   .certificate__date {
     margin-top: 15px;
-
-    font-size: var(--certificate-date-font-size-xs);
   }
 }
 
@@ -457,14 +423,8 @@ certificate */
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: var(--certificate-standing-font-size);
+  font-size: var(--text-fs);
   line-height: 1.5;
-}
-
-@media screen and (max-width: 413px) {
-  .certificate__standing {
-    font-size: var(--certificate-standing-font-size-xs);
-  }
 }
 
 .certificate__photo {
@@ -491,7 +451,8 @@ certificate */
   width: 100%;
   height: 80%;
 
-  box-shadow: 0 0 100px rgba(149,252,222, 0.1);
+  box-shadow: 0 0 100px var(--accent-color);
+  opacity: 0.1;
 }
 
 
@@ -524,7 +485,7 @@ socials */
   margin-bottom: 10px;
 
   font-weight: 400;
-  font-size: var(--socials-label-font-size);
+  font-size: var(--text-fs);
   line-height: 1.5;
 }
 
@@ -537,8 +498,6 @@ socials */
 @media screen and (max-width: 413px) {
   .socials__label {
     margin-top: 0;
-
-    font-size: var(--socials-label-font-size-xs);
   }
 }
 
@@ -568,7 +527,7 @@ socials */
   height: 56px;
 
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--coloron-bg);
   transition: background-color 0.5s ease;
 }
 
@@ -580,14 +539,14 @@ socials */
 }
 
 .socials__link:hover {
-  background-color: #1F1F24;
+  background-color: var(--color-bg);
 }
 
 .socials__icon {
   width: 36px;
   height: 36px;
 
-  fill: black;
+  fill: var(--color-bg);
   transition: fill 0.5s ease;
 }
 
@@ -599,5 +558,5 @@ socials */
 }
 
 .socials__link:hover .socials__icon {
-  fill: #95FCDE;
+  fill: var(--accent-color);
 }
